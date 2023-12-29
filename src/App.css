@@ -1,38 +1,109 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
+}
+
+.Navbar {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #495e57;
+}
+
+.Navbar ul {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.Navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #495e57;
+    color: #fff;
+    padding: 20px;
+    margin-top: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+}
+
+.footer-item ul {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.footer-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+    margin: 0;
+}
+
+.social-links {
+    margin-right: 20px;
+}
+
+.social-links li {
+    display: flex;
+    margin-right: 10px; /* Adjust margin between social links as needed */
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-logo {
+    padding: 5px;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
